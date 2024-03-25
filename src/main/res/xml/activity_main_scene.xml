@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000"
+        motion:autoTransition="animateToEnd"
+        >
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageView2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="93dp"
+            android:layout_height="87dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.446"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_editor_absoluteY="405dp" />
+        <Constraint
+            android:id="@+id/welcomeLabel"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView2"
+            android:layout_width="243dp"
+            android:layout_height="75dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.109"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView2"
+            motion:layout_constraintHorizontal_bias="0.493"
+            motion:layout_constraintStart_toStartOf="@+id/imageView2"
+            android:alpha="0"
+            android:scaleX="0"
+            android:scaleY="0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/welcomeLabel"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView2"
+            android:layout_width="243dp"
+            android:layout_height="75dp"
+            motion:layout_constraintStart_toStartOf="@+id/imageView2"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.109"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView2"
+            motion:layout_constraintHorizontal_bias="0.493"
+            android:scaleX="1"
+            android:alpha="1"
+            android:scaleY="1" />
+    </ConstraintSet>
+</MotionScene>

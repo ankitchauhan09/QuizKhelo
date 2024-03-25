@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F3"
+    android:padding="10dp"
+    android:textAlignment="viewStart"
+    tools:context=".QuestionsActivity">
+
+    <TextView
+        android:id="@+id/questionTextField"
+        android:layout_width="322dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/questions_background"
+        android:elevation="15sp"
+        android:fontFamily="@font/baloo_bhai"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="This is a sample question it not will not give you anything"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionNoTextField" />
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/question_options_background"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/questionTextField"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/questionTextField"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextField" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/question_options_background"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/option1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/option1"
+        app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+    <TextView
+        android:id="@+id/option3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/question_options_background"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintStart_toStartOf="@+id/option2"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+    <TextView
+        android:id="@+id/option4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/question_options_background"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/option3"
+        app:layout_constraintStart_toStartOf="@+id/option3"
+        app:layout_constraintTop_toBottomOf="@+id/option3" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="355dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#004643"
+        android:fontFamily="@font/baloo"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option4" />
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="127dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/questionTextField"
+        app:layout_constraintEnd_toStartOf="@+id/questionNoTextField"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionNoTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="1/10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playerName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
